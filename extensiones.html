@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Catálogo de extensiones digitales | Michel Digital Studio" />
+  <title>Extensiones | Michel Digital Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navegación principal">
+      <a class="brand" href="index.html" aria-label="Michel Digital Studio">
+        <span class="brand-mark">M</span>
+        <span>Michel Digital Studio</span>
+      </a>
+
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Abrir menú" />
+      <label class="nav-toggle-label" for="nav-toggle"><span></span></label>
+
+      <ul class="nav-menu">
+        <li><a href="extensiones.html">Extensiones</a></li>
+        <li><a href="aplicaciones.html">Aplicaciones</a></li>
+        <li><a href="pdf.html">PDF</a></li>
+        <li><a href="ebooks.html">E-books</a></li>
+        <li><a href="index.html#ayuda">Centro de ayuda</a></li>
+        <li><a href="index.html#privacidad">Políticas de privacidad</a></li>
+        <li class="dropdown">
+          <button class="dropdown-button" aria-expanded="false" aria-controls="store-links">
+            Productos
+            <span aria-hidden="true">▾</span>
+          </button>
+          <ul class="dropdown-menu" id="store-links">
+            <li><a href="extensiones.html">Extensiones</a></li>
+            <li><a href="aplicaciones.html">Aplicaciones</a></li>
+            <li><a href="pdf.html">PDF</a></li>
+            <li><a href="ebooks.html">E-books</a></li>
+            <li><a href="https://michely1.gumroad.com/l/cdyezu" target="_blank" rel="noopener noreferrer">Producto destacado</a></li>
+            <li><a href="https://ko-fi.com/michelcabrera" target="_blank" rel="noopener noreferrer">Apoyar en Ko-fi</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <!-- Hero pequeño y directo -->
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <span class="eyebrow">Catálogo de extensiones</span>
+        <h1>Extensiones prácticas para tu navegador y automatizaciones.</h1>
+        <p>Descubre herramientas que ahorran tiempo, mejoran la productividad y resuelven tareas repetitivas. Todas con instrucciones claras y soporte directo.</p>
+      </div>
+    </section>
+
+    <!-- Cuadrícula de productos -->
+    <section class="section-shell">
+      <div class="section-heading">
+        <h2>Elige tu extensión</h2>
+        <p>Cada producto incluye descarga inmediata, actualizaciones y guía de instalación.</p>
+      </div>
+      <div class="product-grid">
+        <!-- PRODUCTO 1 -->
+        <article class="product-card">
+          <!-- Cambia el emoji por una imagen: <img src="ruta/de/tu/imagen.png" alt="Extensión 1" class="card-icon"> -->
+          <span class="card-icon">🧩</span>
+          <h3>Nombre de la extensión 1</h3>
+          <p>Una breve descripción de lo que hace y el problema que resuelve.</p>
+          <div class="price-row">
+            <strong>$4.99</strong>
+          </div>
+          <!-- ⚠️ CAMBIA ESTE ENLACE por tu producto real en Gumroad o Ko-fi -->
+          <a href="https://tu-tienda.gumroad.com/l/extension1" target="_blank" rel="noopener noreferrer" class="button primary">Comprar ahora</a>
+        </article>
+
+        <!-- PRODUCTO 2 -->
+        <article class="product-card">
+          <span class="card-icon">⚡</span>
+          <h3>Nombre de la extensión 2</h3>
+          <p>Descripción atractiva.</p>
+          <div class="price-row">
+            <strong>$7.99</strong>
+          </div>
+          <!-- ⚠️ CAMBIA ESTE ENLACE -->
+          <a href="https://tu-tienda.gumroad.com/l/extension2" target="_blank" rel="noopener noreferrer" class="button primary">Comprar ahora</a>
+        </article>
+
+        <!-- PRODUCTO 3 (puedes duplicar o eliminar artículos) -->
+        <article class="product-card">
+          <span class="card-icon">🔧</span>
+          <h3>Nombre de la extensión 3</h3>
+          <p>Otra descripción breve.</p>
+          <div class="price-row">
+            <strong>$12.99</strong>
+          </div>
+          <a href="https://tu-tienda.gumroad.com/l/extension3" target="_blank" rel="noopener noreferrer" class="button primary">Comprar ahora</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Enlace para volver al inicio -->
+    <div style="text-align: center; margin: 2rem 0;">
+      <a href="index.html" class="text-link">← Volver al escaparate principal</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Michel Digital Studio. Productos digitales creados para crecer.</p>
+    <div>
+      <a href="https://michely1.gumroad.com/l/cdyezu" target="_blank" rel="noopener noreferrer">Gumroad</a>
+      <a href="https://ko-fi.com/michelcabrera" target="_blank" rel="noopener noreferrer">Ko-fi</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

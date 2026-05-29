@@ -13,7 +13,8 @@
 <body>
   <header class="site-header">
     <nav class="navbar" aria-label="Navegación principal">
-      <a class="brand" href="#inicio" aria-label="Michel Digital Studio">
+      <!-- El logo ahora siempre lleva al inicio -->
+      <a class="brand" href="index.html" aria-label="Michel Digital Studio">
         <span class="brand-mark">M</span>
         <span>Michel Digital Studio</span>
       </a>
@@ -22,19 +23,25 @@
       <label class="nav-toggle-label" for="nav-toggle"><span></span></label>
 
       <ul class="nav-menu">
-        <li><a href="#extensiones">Extensiones</a></li>
-        <li><a href="#aplicaciones">Aplicaciones</a></li>
-        <li><a href="#pdf">PDF</a></li>
-        <li><a href="#ebooks">E-books</a></li>
+        <!-- Enlaces del menú corregidos para ir a las páginas de categoría -->
+        <li><a href="extensiones.html">Extensiones</a></li>
+        <li><a href="aplicaciones.html">Aplicaciones</a></li>
+        <li><a href="pdf.html">PDF</a></li>
+        <li><a href="ebooks.html">E-books</a></li>
         <li><a href="#ayuda">Centro de ayuda</a></li>
         <li><a href="#privacidad">Políticas de privacidad</a></li>
+        <!-- Menú desplegable con accesos rápidos a productos (puedes personalizarlo) -->
         <li class="dropdown">
           <button class="dropdown-button" aria-expanded="false" aria-controls="store-links">
-            Comprar ahora
+            Productos
             <span aria-hidden="true">▾</span>
           </button>
           <ul class="dropdown-menu" id="store-links">
-            <li><a href="https://michely1.gumroad.com/l/cdyezu" target="_blank" rel="noopener noreferrer">Producto en Gumroad</a></li>
+            <li><a href="extensiones.html">Extensiones</a></li>
+            <li><a href="aplicaciones.html">Aplicaciones</a></li>
+            <li><a href="pdf.html">PDF</a></li>
+            <li><a href="ebooks.html">E-books</a></li>
+            <li><a href="https://michely1.gumroad.com/l/cdyezu" target="_blank" rel="noopener noreferrer">Producto destacado</a></li>
             <li><a href="https://ko-fi.com/michelcabrera" target="_blank" rel="noopener noreferrer">Apoyar en Ko-fi</a></li>
           </ul>
         </li>
@@ -52,6 +59,7 @@
           navegación clara y llamadas a la acción que invitan a seguir explorando.
         </p>
         <div class="hero-actions">
+          <!-- Botones modificados: "Ver producto destacado" lleva a un producto concreto, "Explorar catálogo" baja a la sección de categorías -->
           <a class="button primary" href="https://michely1.gumroad.com/l/cdyezu" target="_blank" rel="noopener noreferrer">Ver producto destacado</a>
           <a class="button secondary" href="#catalogo">Explorar catálogo</a>
         </div>
@@ -88,29 +96,30 @@
         <p>Presenta cada tipo de contenido con tarjetas claras, elegantes y fáciles de actualizar.</p>
       </div>
       <div class="product-grid">
+        <!-- Tarjetas modificadas: ahora llevan a las páginas de categoría -->
         <article class="product-card" id="extensiones">
           <span class="card-icon">🧩</span>
           <h3>Extensiones</h3>
           <p>Herramientas para navegadores, automatizaciones y complementos que resuelven tareas específicas.</p>
-          <a href="https://michely1.gumroad.com/l/cdyezu" target="_blank" rel="noopener noreferrer">Comprar extensión →</a>
+          <a href="extensiones.html">Ver extensiones →</a>
         </article>
         <article class="product-card" id="aplicaciones">
           <span class="card-icon">📱</span>
           <h3>Aplicaciones</h3>
           <p>Apps ligeras, prácticas y listas para descargar, con instrucciones simples para tus clientes.</p>
-          <a href="https://ko-fi.com/michelcabrera" target="_blank" rel="noopener noreferrer">Ver aplicaciones →</a>
+          <a href="aplicaciones.html">Ver aplicaciones →</a>
         </article>
         <article class="product-card" id="pdf">
           <span class="card-icon">📄</span>
           <h3>PDF</h3>
           <p>Guías, checklists, recursos imprimibles y documentación profesional en formato descargable.</p>
-          <a href="https://michely1.gumroad.com/l/cdyezu" target="_blank" rel="noopener noreferrer">Descargar PDF →</a>
+          <a href="pdf.html">Ver PDFs →</a>
         </article>
         <article class="product-card" id="ebooks">
           <span class="card-icon">📚</span>
           <h3>E-books</h3>
           <p>Libros digitales y materiales educativos con portadas atractivas y acceso instantáneo.</p>
-          <a href="https://ko-fi.com/michelcabrera" target="_blank" rel="noopener noreferrer">Leer e-books →</a>
+          <a href="ebooks.html">Ver e-books →</a>
         </article>
       </div>
     </section>

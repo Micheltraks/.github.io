@@ -1,105 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Catálogo de aplicaciones digitales | Michel Digital Studio" />
-  <title>Aplicaciones | Michel Digital Studio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpaper Studio – Digital'sMichel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos adicionales para la galería de capturas */
+        .hero-screenshots {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .hero-screenshots img {
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            max-width: 100%;
+            height: auto;
+            width: 280px;
+            object-fit: cover;
+        }
+        @media (max-width: 768px) {
+            .hero-screenshots img {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="navbar" aria-label="Navegación principal">
-      <a class="brand" href="index.html" aria-label="Michel Digital Studio">
-        <span class="brand-mark">M</span>
-        <span>Michel Digital Studio</span>
-      </a>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Digital's<span>Michel</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="extensiones.html">Extensiones</a></li>
+                    <li><a href="aplicaciones.html" class="active">Apps</a></li>
+                    <li><a href="flujos.html">Flujos</a></li>
+                    <li><a href="agentes.html">Agentes IA</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Abrir menú" />
-      <label class="nav-toggle-label" for="nav-toggle"><span></span></label>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-product">
+            <div class="container hero-product-content">
+                <div class="hero-product-text">
+                    <h1>🖼️ Wallpaper Studio</h1>
+                    <p class="hero-subtitle">Encuentra, descarga y aplica wallpapers espectaculares directamente desde Wallhaven, sin complicaciones.</p>
+                    <p class="hero-description">Aplicación de escritorio para Windows que transforma tu fondo de pantalla en segundos.</p>
+                    <div class="hero-cta">
+                        <span class="price" style="font-size:1.8rem; display:block; margin-bottom:1rem;">$3.99 USD</span>
+                        <a href="https://michely1.gumroad.com/l/wahisy?wanted=true" class="btn-primary btn-large" target="_blank" rel="noopener">
+                            🛒 Comprar ahora en Gumroad
+                        </a>
+                        <p class="guarantee">✅ Pago seguro · Acceso inmediato · Soporte incluido</p>
+                    </div>
+                </div>
+                <div class="hero-product-image">
+                    <div class="hero-screenshots">
+                        <img src="https://i.postimg.cc/g2p520Bf/Captura-de-pantalla-2026-05-26-120907.png" alt="Wallpaper Studio - Búsqueda de wallpapers">
+                        <img src="https://i.postimg.cc/rw9H0Lvg/Captura-de-pantalla-2026-05-26-120931.png" alt="Wallpaper Studio - Vista del wallpaper aplicado">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <ul class="nav-menu">
-        <li><a href="extensiones.html">Extensiones</a></li>
-        <li><a href="aplicaciones.html">Aplicaciones</a></li>
-        <li><a href="pdf.html">PDF</a></li>
-        <li><a href="ebooks.html">E-books</a></li>
-        <li><a href="index.html#ayuda">Centro de ayuda</a></li>
-        <li><a href="index.html#privacidad">Políticas de privacidad</a></li>
-        <li class="dropdown">
-          <button class="dropdown-button" aria-expanded="false" aria-controls="store-links">
-            Productos
-            <span aria-hidden="true">▾</span>
-          </button>
-          <ul class="dropdown-menu" id="store-links">
-            <li><a href="extensiones.html">Extensiones</a></li>
-            <li><a href="aplicaciones.html">Aplicaciones</a></li>
-            <li><a href="pdf.html">PDF</a></li>
-            <li><a href="ebooks.html">E-books</a></li>
-            <li><a href="https://michely1.gumroad.com/l/cdyezu" target="_blank" rel="noopener noreferrer">Producto destacado</a></li>
-            <li><a href="https://ko-fi.com/michelcabrera" target="_blank" rel="noopener noreferrer">Apoyar en Ko-fi</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </header>
+        <!-- Features Section -->
+        <section class="features container">
+            <h2>🎯 Características principales</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <span class="feature-icon">🔍</span>
+                    <h3>Búsqueda por palabra clave</h3>
+                    <p>Explora miles de wallpapers de la comunidad Wallhaven con solo escribir lo que imaginas.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🖱️</span>
+                    <h3>Descarga y aplicación en un clic</h3>
+                    <p>Elige el wallpaper perfecto y se establecerá automáticamente como fondo de escritorio. Sin pasos extra.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🎲</span>
+                    <h3>Modo aleatorio</h3>
+                    <p>¿Sin inspiración? Descubre fondos sorprendentes con la función Random Wallpaper.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">📜</span>
+                    <h3>Historial de descargas</h3>
+                    <p>Accede a todos los wallpapers que has descargado, incluso sin conexión.</p>
+                </div>
+            </div>
+        </section>
 
-  <main id="inicio">
-    <section class="hero section-shell">
-      <div class="hero-copy">
-        <span class="eyebrow">Catálogo de aplicaciones</span>
-        <h1>Aplicaciones ligeras y prácticas, listas para descargar.</h1>
-        <p>Apps que resuelven tareas cotidianas, con instrucciones sencillas y soporte continuo. Solo pagas una vez y las usas para siempre.</p>
-      </div>
-    </section>
+        <!-- Perfect for Section -->
+        <section class="target container">
+            <h2>👤 Perfecto para ti si…</h2>
+            <ul class="target-list">
+                <li>Quieres renovar tu escritorio con fondos de altísima calidad sin perder tiempo navegando.</li>
+                <li>Te gusta personalizar tu espacio digital a diario.</li>
+                <li>Valoras las herramientas simples, rápidas y gratuitas (solo necesitas tu API key de Wallhaven).</li>
+                <li>Buscas una experiencia nativa en Windows 7 o superior.</li>
+            </ul>
+        </section>
 
-    <section class="section-shell">
-      <div class="section-heading">
-        <h2>Elige tu aplicación</h2>
-        <p>Cada producto incluye descarga inmediata, actualizaciones y guía de instalación.</p>
-      </div>
-      <div class="product-grid">
-        <!-- PRODUCTO 1 -->
-        <article class="product-card">
-          <span class="card-icon">📱</span>
-          <h3>Nombre de la app 1</h3>
-          <p>Descripción breve.</p>
-          <div class="price-row">
-            <strong>$6.99</strong>
-          </div>
-          <!-- ⚠️ CAMBIA ESTE ENLACE -->
-          <a href="https://tu-tienda.gumroad.com/l/app1" target="_blank" rel="noopener noreferrer" class="button primary">Comprar ahora</a>
-        </article>
+        <!-- CTA Repeat -->
+        <section class="cta-final container">
+            <h2>¿Listo para darle vida a tu pantalla?</h2>
+            <a href="https://michely1.gumroad.com/l/wahisy?wanted=true" class="btn-primary btn-large" target="_blank" rel="noopener">
+                🛒 Obtener Wallpaper Studio por $3.99 USD
+            </a>
+            <p style="margin-top:1rem; opacity:0.8;">Compra única · Sin suscripciones · Actualizaciones incluidas</p>
+        </section>
 
-        <!-- PRODUCTO 2 -->
-        <article class="product-card">
-          <span class="card-icon">💻</span>
-          <h3>Nombre de la app 2</h3>
-          <p>Descripción breve.</p>
-          <div class="price-row">
-            <strong>$9.99</strong>
-          </div>
-          <a href="https://tu-tienda.gumroad.com/l/app2" target="_blank" rel="noopener noreferrer" class="button primary">Comprar ahora</a>
-        </article>
-        <!-- Puedes añadir más productos copiando un artículo -->
-      </div>
-    </section>
+        <div class="container back-section">
+            <a href="index.html" class="btn-secondary">← Volver al inicio</a>
+        </div>
+    </main>
 
-    <div style="text-align: center; margin: 2rem 0;">
-      <a href="index.html" class="text-link">← Volver al escaparate principal</a>
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <p>© 2026 Michel Digital Studio. Productos digitales creados para crecer.</p>
-    <div>
-      <a href="https://michely1.gumroad.com/l/cdyezu" target="_blank" rel="noopener noreferrer">Gumroad</a>
-      <a href="https://ko-fi.com/michelcabrera" target="_blank" rel="noopener noreferrer">Ko-fi</a>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <footer>
+        <div class="container">
+            <p>© 2025 Digital'sMichel – Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>

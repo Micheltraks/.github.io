@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
-        /* Estilos adicionales para la galería de capturas */
+        /* Estilos adicionales para la landing de Wallpaper Studio */
         .hero-screenshots {
             display: flex;
             gap: 1rem;
@@ -22,7 +22,54 @@
             width: 280px;
             object-fit: cover;
         }
+
+        /* Icono junto al título */
+        .title-icon {
+            vertical-align: middle;
+            margin-right: 10px;
+            height: 48px;
+            width: auto;
+        }
+
+        /* Contenedor flex para precio + botón */
+        .hero-cta-flex {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        /* Precio con estilo destacado */
+        .price-large {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            backdrop-filter: blur(5px);
+        }
+
+        /* Botón más grande */
+        .btn-xlarge {
+            padding: 1rem 2.5rem;
+            font-size: 1.3rem;
+            font-weight: 700;
+            border-radius: 50px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn-xlarge:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+        }
+
         @media (max-width: 768px) {
+            .hero-cta-flex {
+                flex-direction: column;
+                align-items: flex-start;
+            }
             .hero-screenshots img {
                 width: 100%;
             }
@@ -50,16 +97,19 @@
         <section class="hero-product">
             <div class="container hero-product-content">
                 <div class="hero-product-text">
-                    <h1>🖼️ Wallpaper Studio</h1>
+                    <h1>
+                        <img src="https://i.postimg.cc/13NjBqVs/icon.png" alt="Icono Wallpaper Studio" class="title-icon">
+                        Wallpaper Studio
+                    </h1>
                     <p class="hero-subtitle">Encuentra, descarga y aplica wallpapers espectaculares directamente desde Wallhaven, sin complicaciones.</p>
                     <p class="hero-description">Aplicación de escritorio para Windows que transforma tu fondo de pantalla en segundos.</p>
-                    <div class="hero-cta">
-                        <span class="price" style="font-size:1.8rem; display:block; margin-bottom:1rem;">$3.99 USD</span>
-                        <a href="https://michely1.gumroad.com/l/wahisy?wanted=true" class="btn-primary btn-large" target="_blank" rel="noopener">
-                            🛒 Comprar ahora en Gumroad
+                    <div class="hero-cta-flex">
+                        <span class="price-large">$3.99 USD</span>
+                        <a href="https://michely1.gumroad.com/l/wahisy?wanted=true" class="btn-primary btn-xlarge" target="_blank" rel="noopener">
+                            🛒 Comprar ahora
                         </a>
-                        <p class="guarantee">✅ Pago seguro · Acceso inmediato · Soporte incluido</p>
                     </div>
+                    <p class="guarantee" style="margin-top: 1rem;">✅ Pago seguro · Acceso inmediato · Soporte incluido</p>
                 </div>
                 <div class="hero-product-image">
                     <div class="hero-screenshots">
@@ -111,10 +161,13 @@
         <!-- CTA Repeat -->
         <section class="cta-final container">
             <h2>¿Listo para darle vida a tu pantalla?</h2>
-            <a href="https://michely1.gumroad.com/l/wahisy?wanted=true" class="btn-primary btn-large" target="_blank" rel="noopener">
-                🛒 Obtener Wallpaper Studio por $3.99 USD
-            </a>
-            <p style="margin-top:1rem; opacity:0.8;">Compra única · Sin suscripciones · Actualizaciones incluidas</p>
+            <div class="hero-cta-flex" style="justify-content: center;">
+                <span class="price-large">$3.99 USD</span>
+                <a href="https://michely1.gumroad.com/l/wahisy?wanted=true" class="btn-primary btn-xlarge" target="_blank" rel="noopener">
+                    🛒 Obtener Wallpaper Studio
+                </a>
+            </div>
+            <p style="margin-top:1.5rem; opacity:0.8;">Compra única · Sin suscripciones · Actualizaciones incluidas</p>
         </section>
 
         <div class="container back-section">

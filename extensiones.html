@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extensiones – Digital'sMichel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo para imágenes dentro de las tarjetas de producto */
+        .product-image {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: contain;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            background: rgba(255,255,255,0.05);
+            padding: 0.5rem;
+        }
+        .product-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .product-card .btn-primary {
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Digital's<span>Michel</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="extensiones.html" class="active">Extensiones</a></li>
+                    <li><a href="aplicaciones.html">Apps</a></li>
+                    <li><a href="flujos.html">Flujos</a></li>
+                    <li><a href="agentes.html">Agentes IA</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-small">
+            <div class="container">
+                <h1>🧩 Extensiones</h1>
+                <p>Pequeñas herramientas que amplían tu productividad y eliminan tareas repetitivas.</p>
+            </div>
+        </section>
+
+        <section class="product-grid container">
+            <!-- WatchWalk – Producto REAL -->
+            <div class="product-card">
+                <img src="https://i.postimg.cc/wvhRgHfF/large.png" alt="WatchWalk Logo" class="product-image">
+                <h3>WatchWalk</h3>
+                <p>Extrae productos, precios, SKUs y cualquier dato de páginas web automáticamente con IA. Envíalos a Google Sheets, Supabase, n8n, Make, Zapier o donde necesites. Sin código, en un clic.</p>
+                <p style="font-size: 0.9rem; opacity: 0.8; margin: 0.5rem 0;">💎 PRO: Extracciones ILIMITADAS · Campos ilimitados · Pago único</p>
+                <span class="price">$4.99 USD</span>
+                <a href="https://michely1.gumroad.com/l/cdyezu?wanted=true" class="btn-primary" target="_blank" rel="noopener">Comprar en Gumroad</a>
+            </div>
+
+            <!-- Producto 2 – Marcador -->
+            <div class="product-card">
+                <div class="product-icon">🔍</div>
+                <h3>Extensión 2 – Nombre del producto</h3>
+                <p>Descripción breve de lo que hace, problema que soluciona y tecnología usada.</p>
+                <span class="price">$14.99 USD</span>
+                <a href="#" class="btn-primary" target="_blank" rel="noopener">Comprar en Gumroad</a>
+            </div>
+
+            <!-- Producto 3 – Marcador -->
+            <div class="product-card">
+                <div class="product-icon">⚡</div>
+                <h3>Extensión 3 – Nombre del producto</h3>
+                <p>Descripción breve de lo que hace, problema que soluciona y tecnología usada.</p>
+                <span class="price">$19.99 USD</span>
+                <a href="#" class="btn-primary" target="_blank" rel="noopener">Comprar en Gumroad</a>
+            </div>
+            <!-- Añade más tarjetas aquí -->
+        </section>
+
+        <div class="container back-section">
+            <a href="index.html" class="btn-secondary">← Volver al inicio</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Digital'sMichel – Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

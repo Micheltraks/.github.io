@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpaper Studio – Digital'sMichel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos adicionales para la galería de capturas */
+        .hero-screenshots {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .hero-screenshots img {
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            max-width: 100%;
+            height: auto;
+            width: 280px;
+            object-fit: cover;
+        }
+        @media (max-width: 768px) {
+            .hero-screenshots img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Digital's<span>Michel</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="extensiones.html">Extensiones</a></li>
+                    <li><a href="aplicaciones.html" class="active">Apps</a></li>
+                    <li><a href="flujos.html">Flujos</a></li>
+                    <li><a href="agentes.html">Agentes IA</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-product">
+            <div class="container hero-product-content">
+                <div class="hero-product-text">
+                    <h1>🖼️ Wallpaper Studio</h1>
+                    <p class="hero-subtitle">Encuentra, descarga y aplica wallpapers espectaculares directamente desde Wallhaven, sin complicaciones.</p>
+                    <p class="hero-description">Aplicación de escritorio para Windows que transforma tu fondo de pantalla en segundos.</p>
+                    <div class="hero-cta">
+                        <span class="price" style="font-size:1.8rem; display:block; margin-bottom:1rem;">$3.99 USD</span>
+                        <a href="https://michely1.gumroad.com/l/wahisy?wanted=true" class="btn-primary btn-large" target="_blank" rel="noopener">
+                            🛒 Comprar ahora en Gumroad
+                        </a>
+                        <p class="guarantee">✅ Pago seguro · Acceso inmediato · Soporte incluido</p>
+                    </div>
+                </div>
+                <div class="hero-product-image">
+                    <div class="hero-screenshots">
+                        <img src="https://i.postimg.cc/g2p520Bf/Captura-de-pantalla-2026-05-26-120907.png" alt="Wallpaper Studio - Búsqueda de wallpapers">
+                        <img src="https://i.postimg.cc/rw9H0Lvg/Captura-de-pantalla-2026-05-26-120931.png" alt="Wallpaper Studio - Vista del wallpaper aplicado">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features container">
+            <h2>🎯 Características principales</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <span class="feature-icon">🔍</span>
+                    <h3>Búsqueda por palabra clave</h3>
+                    <p>Explora miles de wallpapers de la comunidad Wallhaven con solo escribir lo que imaginas.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🖱️</span>
+                    <h3>Descarga y aplicación en un clic</h3>
+                    <p>Elige el wallpaper perfecto y se establecerá automáticamente como fondo de escritorio. Sin pasos extra.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🎲</span>
+                    <h3>Modo aleatorio</h3>
+                    <p>¿Sin inspiración? Descubre fondos sorprendentes con la función Random Wallpaper.</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">📜</span>
+                    <h3>Historial de descargas</h3>
+                    <p>Accede a todos los wallpapers que has descargado, incluso sin conexión.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Perfect for Section -->
+        <section class="target container">
+            <h2>👤 Perfecto para ti si…</h2>
+            <ul class="target-list">
+                <li>Quieres renovar tu escritorio con fondos de altísima calidad sin perder tiempo navegando.</li>
+                <li>Te gusta personalizar tu espacio digital a diario.</li>
+                <li>Valoras las herramientas simples, rápidas y gratuitas (solo necesitas tu API key de Wallhaven).</li>
+                <li>Buscas una experiencia nativa en Windows 7 o superior.</li>
+            </ul>
+        </section>
+
+        <!-- CTA Repeat -->
+        <section class="cta-final container">
+            <h2>¿Listo para darle vida a tu pantalla?</h2>
+            <a href="https://michely1.gumroad.com/l/wahisy?wanted=true" class="btn-primary btn-large" target="_blank" rel="noopener">
+                🛒 Obtener Wallpaper Studio por $3.99 USD
+            </a>
+            <p style="margin-top:1rem; opacity:0.8;">Compra única · Sin suscripciones · Actualizaciones incluidas</p>
+        </section>
+
+        <div class="container back-section">
+            <a href="index.html" class="btn-secondary">← Volver al inicio</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Digital'sMichel – Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
